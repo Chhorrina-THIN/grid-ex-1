@@ -1,0 +1,60 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+.container{
+    display: grid;
+    text-align: center;
+    grid-template-columns: 1fr 3fr 1fr;
+    grid-template-areas:
+    "blog-header blog-header blog-header "
+    "sidebar article-1 related-posts"
+    "sidebar article-2 related-posts"
+    "sidebar article-3 related-posts"
+    "footer footer footer ";
+}
+.blog-header{
+    grid-area:blog-header ;
+    color: #fff;
+    padding: 20px;
+    background: rgba(51,51,51,255);
+}
+.sidebar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-area: sidebar;
+    background: rgba(244,244,244,255);
+}
+.article-1{
+    grid-area:article-1;
+    padding: 70px;
+    margin: 5px 0;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
+}
+.article-2{
+    grid-area:article-2;
+    padding: 70px;
+    margin: 5px 0;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
+}
+.article-3{
+    grid-area:article-3;
+    padding: 70px;
+    margin: 5px 0;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
+}
+.related-posts{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-area: related-posts;
+    background: rgba(244,244,244,255);
+}
+.footer{
+    grid-area: footer;
+    color: #fff;
+    padding: 20px;
+    background: rgba(51,51,51,255);
+}
